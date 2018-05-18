@@ -2,6 +2,7 @@ package com.idc9000.smartlock;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -57,6 +58,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         EventBus.getDefault().register(this);
         initView();
+        Log.e("DD", "DD");
     }
 
     @Override
