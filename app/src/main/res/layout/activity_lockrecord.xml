@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededee">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_below="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_lock_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ededee"
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+       <!--<android.support.design.widget.FloatingActionButton-->
+           <!--android:id="@+id/floatingActionButton"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:layout_marginRight="34px"-->
+           <!--android:layout_marginBottom="75px"-->
+           <!--android:backgroundTint="#3F91E5"-->
+           <!--android:layout_gravity="bottom|end"-->
+           <!--android:src="@mipmap/sync" />-->
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

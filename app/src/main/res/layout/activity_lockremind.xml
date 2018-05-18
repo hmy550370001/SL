@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/person_center_bg">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar" />
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/item_alarm_setting_bg">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/item_alarm_setting"
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                style="@style/item_alarm_setting_error_tv"
+                android:text="@string/error_alarm_text" />
+
+            <TextView
+                android:id="@id/tv_time_setting"
+                style="@style/item_alarm_setting_error_time_tv"
+                android:text="@string/test_time_text" />
+
+            <ImageView
+                android:id="@id/next"
+                style="@style/item_alarm_setting_error_next"
+                android:src="@mipmap/next" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/pw_setting"
+            android:layout_width="match_parent"
+            android:layout_height="96px">
+
+            <TextView
+                style="@style/item_pw_setting"
+                android:text="@string/pw_setting_text" />
+
+            <TextView
+                style="@style/item_pw_time"
+                android:text="@string/no_update_text" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

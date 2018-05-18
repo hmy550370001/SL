@@ -1,0 +1,258 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cde9f0">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="488px"
+            android:background="@mipmap/lock_bg"
+            android:orientation="vertical">
+
+            <com.qmuiteam.qmui.widget.QMUITopBar
+                android:id="@+id/title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="96px">
+
+            </com.qmuiteam.qmui.widget.QMUITopBar>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_marginTop="80px">
+                <com.pkmmte.view.CircularImageView
+                    android:id="@id/portrait"
+                    android:layout_width="130px"
+                    android:layout_height="130px"
+                    android:layout_centerInParent="true"
+                    app:border="true"
+                    app:border_color="@color/white"
+                    app:border_width="2dp"
+                    android:background="@mipmap/lock_tx" />
+                
+                <ImageView
+                    android:id="@+id/take_photo"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_marginLeft="50px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/portrait"
+                    android:background="@mipmap/photo"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+            
+      
+
+            <TextView
+                android:id="@+id/tv_lockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55px"
+                android:text="美年广场"
+                android:textColor="#FFFFFF"
+                android:textSize="32px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="40px"
+            android:text="锁的服务"
+            android:textColor="#666666"
+            android:textSize="24px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lock_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="58px"
+                    android:layout_height="86px"
+                    android:src="@mipmap/key_journal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:text="门锁日志"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="77px"
+                android:background="#60A3E8"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/property_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="58px"
+                    android:layout_height="86px"
+                    android:src="@mipmap/tenement" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:text="物业缴费"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="77px"
+                android:background="#60A3E8"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lock_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="58px"
+                    android:layout_height="86px"
+                    android:src="@mipmap/key" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:text="门锁钥匙"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="31px"
+            android:text="商家服务"
+            android:textColor="#666666"
+            android:textSize="24px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/cleaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="58px"
+                    android:layout_height="86px"
+                    android:src="@mipmap/cleankeeping" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:text="保洁服务"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="77px"
+                android:background="#60A3E8"></View>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/repair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="58px"
+                    android:layout_height="86px"
+                    android:src="@mipmap/home_appliance_maintenance" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:text="家电维修"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="77px"
+                android:background="#60A3E8"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/realty_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="58px"
+                    android:layout_height="86px"
+                    android:src="@mipmap/tenement_serve" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:layout_marginBottom="44px"
+                    android:text="物业服务"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

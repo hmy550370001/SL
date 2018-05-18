@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_bg">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@id/item_tenant"
+        style="@style/KeyList_item_bg">
+
+        <ImageView
+            android:src="@mipmap/key1"
+            style="@style/SelectKeyType_iv_left" />
+
+        <TextView
+            android:layout_toLeftOf="@id/next"
+            android:text="@string/zhys_text"
+            style="@style/SelectKeyType_tv" />
+
+        <ImageView
+            android:id="@id/next"
+            android:src="@mipmap/next"
+            style="@style/iv_next" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include layout="@layout/line_item"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@id/item_temporary"
+        style="@style/KeyList_item_bg">
+
+        <ImageView
+            android:src="@mipmap/linshi"
+            style="@style/SelectKeyType_iv_left" />
+
+        <TextView
+            android:layout_toLeftOf="@id/next"
+            android:text="@string/lsys_text"
+            style="@style/SelectKeyType_tv" />
+
+        <ImageView
+            android:id="@id/next"
+            android:src="@mipmap/next"
+            style="@style/iv_next" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

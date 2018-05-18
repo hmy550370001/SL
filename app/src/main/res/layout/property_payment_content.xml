@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/PropertyPayMent_content_item_bg">
+        <TextView
+            android:text="房屋租金:"
+            style="@style/PropertyPayMent_content_item_zujin" />
+        <TextView
+            android:id="@id/tv_rent"
+            android:text="1300/月"
+            style="@style/PropertyPayMent_content_item_value" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/PropertyPayMent_content_item_bg">
+        <TextView style="@style/PropertyPayMent_content_item_zujin"
+            android:text="入住时间:"/>
+        <TextView
+            android:id="@id/tv_start_time"
+            style="@style/PropertyPayMent_content_item_value"
+            android:text="2018/01/25" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/PropertyPayMent_content_item_bg">
+        <TextView style="@style/PropertyPayMent_content_item_zujin"
+            android:text="到期时间:"/>
+        <TextView
+            android:id="@id/tv_end_time"
+            style="@style/PropertyPayMent_content_item_value"
+            android:text="2018/01/25" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10px">
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@id/btn_update"
+            app:qmui_radius="40px"
+            app:qmui_backgroundColor="#4E7528"
+            android:text="更新租期"
+            app:qmui_borderColor="#4E7528"
+            style="@style/PropertyPayMent_content_btn" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

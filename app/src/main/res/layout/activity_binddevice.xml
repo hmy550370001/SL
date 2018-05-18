@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/binding_bg">
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="96px">
+    </com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/circleView"
+        android:layout_width="378px"
+        android:layout_height="378px"
+        android:layout_marginTop="72px"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_barColor="#C5EFFB"
+        CircleProgressView:cpv_barColor1="#5CCFF2"
+        CircleProgressView:cpv_barColor2="#2E81EC"
+        CircleProgressView:cpv_barColor3="@color/color_green"
+        CircleProgressView:cpv_barWidth="35px"
+        CircleProgressView:cpv_innerContourSize="0dp"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_outerContourSize="0dp"
+        CircleProgressView:cpv_rimColor="@color/white"
+        CircleProgressView:cpv_rimWidth="35px"
+        CircleProgressView:cpv_seekMode="true"
+        CircleProgressView:cpv_showUnit="true"
+        CircleProgressView:cpv_spinColor="@color/primary"
+        CircleProgressView:cpv_textColor="@color/color_green"
+        CircleProgressView:cpv_textScale="1"
+        CircleProgressView:cpv_unit="%"
+        CircleProgressView:cpv_unitSize="60px"
+        CircleProgressView:cpv_blockCount="100"
+        CircleProgressView:cpv_blockScale="0.5"
+        CircleProgressView:cpv_unitColor="@color/color_green"
+        CircleProgressView:cpv_unitPosition="right_bottom"
+        CircleProgressView:cpv_unitScale="1"
+        CircleProgressView:cpv_value="0" />
+
+    <TextView
+        android:id="@id/tv_tip"
+        android:gravity="center"
+        android:layout_width="558px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87px"
+        android:textSize="@dimen/textSize_28px"
+        android:textColor="#4191E3"
+        android:text="    注：绑定锁具需要一定时间，请您稍候。"/>
+    <EditText
+        android:id="@+id/et_lockname"
+        android:layout_width="560px"
+        android:layout_height="88px"
+        android:layout_marginTop="25px"
+        android:gravity="center"
+        android:background="@drawable/exittext_rectangle"
+        android:hint="在此输入锁具的自定义名称"
+        android:textSize="@dimen/textSize_28px"
+        android:lines="1"
+        android:imeOptions="actionDone"
+        android:textColorHint="#DDDDDD"
+        android:visibility="invisible"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

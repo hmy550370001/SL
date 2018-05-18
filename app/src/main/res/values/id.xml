@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="my" type="id" />
+    <item name="inform" type="id" />
+    <item name="set" type="id" />
+    <!--登陆 注册-->
+    <item name="iv_back" type="id" />
+    <item name="tv_forgetPassWord" type="id" />
+    <item name="input_login_phone" type="id" />
+    <item name="input_login_password" type="id" />
+    <item name="iv_host" type="id" />
+    <item name="iv_user" type="id" />
+    <item name="rb_group" type="id" />
+    <item name="rb_host" type="id" />
+    <item name="rb_user" type="id" />
+    <item name="btn_login" type="id" />
+    <item name="btn_signup" type="id" />
+    <item name="input_sign_phone" type="id" />
+    <item name="input_sign_code" type="id" />
+    <item name="input_sign_name" type="id"/> //
+    <item name="tv_tip" type="id" />
+    <!--设备列表-->
+    <item name="topbar" type="id" />
+    <item name="list_device" type="id" />
+    <item name="btn_add" type="id" />
+    <!--个人中心-->
+    <item name="portrait" type="id" />
+    <item name="tv_name" type="id" />
+    <item name="tv_phone" type="id" />
+    <item name="rl_family" type="id" />
+    <item name="rl_help" type="id" />
+    <item name="rl_check" type="id" />
+    <item name="rl_exit" type="id" />
+    <item name="iv_portrait_family" type="id" />
+    <item name="iv_portrait_help" type="id" />
+    <item name="iv_portrait_check" type="id" />
+    <item name="portrait_exit" type="id" />
+    <item name="iv_next_family" type="id" />
+    <item name="tv_family" type="id" />
+    <item name="iv_change_pw" type="id" />
+    <item name="rl_change_pw" type="id" />
+    <!--选择新建钥匙类型-->
+    <item name="item_tenant" type="id" />
+    <item name="item_temporary" type="id" />
+    <!--门锁钥匙列表-->
+    <item name="top_bar" type="id" />
+    <item name="next" type="id" />
+    <item name="btn_delete" type="id" />
+    <item name="list_key" type="id" />
+    <!--创建租户钥匙密码-->
+    <item name="et_phone" type="id" />
+    <item name="et_confirm_password" type="id" />
+    <item name="safe" type="id" />
+    <item name="hezu" type="id" />
+    <item name="switch_button" type="id" />
+    <item name="tv_time" type="id" />
+    <item name="et_rent" type="id" />
+    <item name="time_spinner" type="id" />
+    <item name="cb_hezu" type="id" />
+    <item name="rbg" type="id" />
+    <item name="rb_day" type="id" />
+    <item name="rb_hour" type="id" />
+    <item name="cb_tip" type="id" />
+    <item name="btn_confirm" type="id" />
+    <item name="horizontal_datePicker" type="id" />
+    <item name="start_time_picker" type="id" />
+    <item name="end_time_picker" type="id" />
+    <!--亲情号-->
+    <item name="et_family" type="id" />
+    <item name="btn_submit" type="id" />
+    <!--门锁提醒-->
+    <item name="item_alarm_setting" type="id" />
+    <item name="pw_setting" type="id" />
+    <item name="tv_time_setting" type="id" />
+    <!--商家详情列表-->
+    <item name="list_business" type="id" />
+    <item name="iv_business" type="id" />
+    <item name="tv_com" type="id" />
+    <item name="tv_tag" type="id" />
+    <!--锁具密码指纹-->
+    <item name="password_list" type="id" />
+    <item name="iv_head" type="id" />
+    <!--引导页-->
+    <item name="banner_guide_background" type="id" />
+    <item name="banner_guide_foreground" type="id" />
+    <item name="tv_guide_skip" type="id" />
+    <item name="btn_guide_enter" type="id" />
+    <!--top_bar-->
+    <item name="my_top_bar" type="id" />
+    <item name="top_bar_left" type="id" />
+    <item name="top_bar_text" type="id" />
+    <item name="top_bar_right" type="id" />
+    <!--物业缴费-->
+    <item name="tv_rent" type="id" />
+    <item name="tv_start_time" type="id" />
+    <item name="tv_end_time" type="id" />
+    <item name="btn_update" type="id" />
+    <!--消息中心-->
+    <item name="tv_left_name" type="id" />
+    <item name="tv_left_content" type="id" />
+    <item name="tv_right_name" type="id" />
+    <item name="tv_right_content" type="id" />
+    <!--门锁设置-->
+    <item name="rl_code" type="id" />
+    <item name="portrait_code" type="id" />
+    <item name="next_code" type="id" />
+    <item name="rl_turn_over" type="id" />
+    <item name="portrait_turn_over" type="id" />
+    <item name="next_turn_over" type="id" />
+    <item name="rl_lock" type="id" />
+    <item name="portrait_lock" type="id" />
+    <item name="next_lock" type="id" />
+    <item name="rl_remind" type="id" />
+    <item name="portrait_remind" type="id" />
+    <item name="next_remind" type="id" />
+    <!--发送密匙-->
+    <item name="et_pw" type="id" />
+    <item name="btn_sure" type="id" />
+
+</resources>

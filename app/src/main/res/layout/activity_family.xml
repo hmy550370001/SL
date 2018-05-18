@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/person_center_bg">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar" />
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/family_et_bg">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/CreateKeyPassword_head_item_bg"
+            android:layout_marginTop="60px">
+
+            <TextView
+                style="@style/CreateKeyPassword_head_item_tv"
+                android:text="@string/family_text" />
+
+            <EditText
+                android:id="@id/et_family"
+                style="@style/CreateKeyPassword_head_item_et"
+                android:hint="@string/family_hint_text"
+                android:inputType="phone"
+                android:maxLength="11" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            style="@style/family_tip"
+            android:text="@string/family_tip_text" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@id/btn_submit"
+            style="@style/round_btn"
+            android:text="@string/submit_text"
+            android:elevation="10px"
+            app:qmui_borderColor="#506739"
+            app:qmui_backgroundColor="#506739" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ededed"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar"/>
+
+    <com.idc9000.smartlock.view.CountDownButton
+        android:background="@drawable/modify_shape_verify_btn_normal"
+        android:layout_marginTop="32px"
+        android:id="@+id/btn_code"
+        android:text="获取验证码"
+        android:elevation="10px"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_28px"
+        android:layout_width="400px"
+        android:layout_height="96px"
+         />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="382px"
+        android:layout_marginTop="40px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/Modify_Password_head_item_bg"
+            android:layout_marginTop="24px">
+
+            <TextView
+                style="@style/Modify_Password_head_item_tv"
+                android:text="验证码" />
+
+            <EditText
+                android:id="@+id/et_inputSignCode"
+                style="@style/Modify_head_item_et"
+                android:hint="在此输入您收到的验证码"
+                android:inputType="phone"
+                android:maxLength="4" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/Modify_Password_head_item_bg"
+            android:layout_marginTop="19px">
+
+            <TextView
+                style="@style/Modify_Password_head_item_tv"
+                android:text="新密码" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/Modify_head_item_et"
+                android:hint="在此输入您的新密码"
+                android:inputType="numberPassword"
+                android:maxLength="8"
+                android:maxLines="1" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/Modify_Password_head_item_bg"
+            android:layout_marginTop="20px">
+
+            <TextView
+                style="@style/Modify_Password_head_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确 认" />
+
+            <EditText
+                android:id="@id/et_confirm_password"
+                style="@style/Modify_3_head_item_et"
+                android:hint="再次输入您的新密码"
+                android:inputType="numberPassword"
+                android:maxLength="8"
+                android:maxLines="1" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_confirm"
+        android:layout_marginTop="32px"
+        app:qmui_backgroundColor="#4E7528"
+        app:qmui_borderColor="#4E7528"
+        app:qmui_radius="24dp"
+        android:text="提交"
+        android:elevation="10px"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_28px"
+        android:layout_width="400px"
+        android:layout_height="96px" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

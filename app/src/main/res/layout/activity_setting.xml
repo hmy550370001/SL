@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar"/>
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/LockSetting_bg">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_code"
+            android:layout_width="match_parent"
+            android:layout_height="95px">
+            <ImageView
+                android:id="@id/portrait_code"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:src="@mipmap/fingerprint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/portrait_code"
+                android:textSize="28px"
+                android:layout_marginLeft="36px"
+                android:textColor="#666666"
+                android:text="@string/pw_finger_setting_text"
+                />
+
+            <ImageView
+                android:id="@id/next_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/next"
+                android:layout_marginRight="32px"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#EEEEEE">
+        </View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_turn_over"
+            android:layout_width="match_parent"
+            android:layout_height="95px">
+            <ImageView
+                android:id="@id/portrait_turn_over"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:src="@mipmap/manage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/portrait_turn_over"
+                android:textSize="28px"
+                android:layout_marginLeft="36px"
+                android:textColor="#666666"
+                android:text="@string/yjgl_setting_text"
+                />
+
+            <ImageView
+                android:id="@id/next_turn_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/next"
+                android:layout_marginRight="32px"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#EEEEEE">
+        </View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_long_pw"
+            android:layout_width="match_parent"
+            android:layout_height="95px">
+            <ImageView
+                android:id="@id/portrait_turn_over"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:src="@mipmap/changmima"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/portrait_turn_over"
+                android:textSize="28px"
+                android:layout_marginLeft="36px"
+                android:textColor="#666666"
+                android:text="长密码设置"
+                />
+
+            <ImageView
+                android:id="@id/next_turn_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/next"
+                android:layout_marginRight="32px"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#EEEEEE">
+        </View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_remind"
+            android:layout_width="match_parent"
+            android:layout_height="95px">
+            <ImageView
+                android:id="@id/portrait_remind"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:src="@mipmap/remind"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/portrait_remind"
+                android:textSize="28px"
+                android:layout_marginLeft="36px"
+                android:textColor="#666666"
+                android:text="警报鸣叫设置"
+                />
+            <ImageView
+                android:id="@id/next_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/next"
+                android:layout_marginRight="32px"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="39px"
+            android:background="#EEEEEE">
+        </View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="51px"
+                android:text="开门密码方式选择"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#EEEEEE">
+        </View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_long_type"
+            android:layout_width="match_parent"
+            android:layout_height="95px">
+            <ImageView
+                android:id="@id/portrait_turn_over"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:src="@mipmap/changmima"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/portrait_turn_over"
+                android:textSize="28px"
+                android:layout_marginLeft="36px"
+                android:textColor="#666666"
+                android:text="长密码"
+                />
+
+            <ImageView
+                android:id="@+id/tb_long"
+                android:background="@mipmap/choose_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32px"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#EEEEEE">
+        </View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_code"
+            android:layout_width="match_parent"
+            android:layout_height="95px">
+            <ImageView
+                android:id="@id/portrait_code"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:src="@mipmap/fingerprint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/portrait_code"
+                android:textSize="28px"
+                android:layout_marginLeft="36px"
+                android:textColor="#666666"
+                android:text="指纹密码"
+                />
+
+            <ImageView
+                android:id="@+id/tb_short"
+                android:background="@mipmap/choose_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32px"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

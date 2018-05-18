@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey"
+    android:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="96px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200px"
+        android:textColor="@color/tip_grey"
+        android:textSize="@dimen/textSize_28px"
+        android:text="请保持蓝牙开启状态，并处于智能锁附近" />
+
+</com.zhy.autolayout.AutoLinearLayout>

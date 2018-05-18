@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_parent"
+    android:gravity="center">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/topbar"
+        style="@style/topBar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/list_business"
+        style="@style/match_parent"
+        android:layout_below="@id/topbar"
+        android:layout_gravity="center"
+        android:background="#ededee"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_businesslist"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

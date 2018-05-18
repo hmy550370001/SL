@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BusinessDetailList_bg" android:layout_marginTop="20px">
+
+    <ImageView
+        android:id="@id/iv_business"
+        style="@style/BusinessDetailList_iv"
+        android:src="@mipmap/business" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="368px"
+        android:layout_height="164px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/tv_name"
+            style="@style/BusinessDetailList_tv_name"
+            android:text="@string/com_text" />
+
+        <TextView
+            android:id="@id/tv_com"
+            style="@style/BusinessDetailList_tv_com"
+            android:text="@string/com_name_text" />
+
+        <TextView
+            android:id="@id/tv_tag"
+            style="@style/BusinessDetailList_tv_tag"
+            android:text="@string/com_name_tag_text" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="164px">
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/BusinessDetailList_right">
+
+            <ImageView
+                style="@style/BusinessDetailList_right_iv"
+                android:src="@mipmap/phone" />
+
+            <TextView
+                android:id="@id/tv_phone"
+                style="@style/BusinessDetailList_right_phone"
+                android:text="15509876754" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

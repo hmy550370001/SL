@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CreateKeyPassword_dialog_bg">
+
+    <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+        android:id="@id/horizontal_datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/CreateKeyPassword_dialog_picker_bg">
+
+        <TextView
+            style="@style/CreateKeyPassword_dialog_picker_tv"
+            android:text="@string/rz_text" />
+
+        <TimePicker
+            android:id="@+id/start_time_picker"
+            style="@style/CreateKeyPassword_dialog_hour_picker" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/line_item" />
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/CreateKeyPassword_dialog_picker_bg">
+
+        <TextView
+            style="@style/CreateKeyPassword_dialog_picker_tv"
+            android:text="@string/lk_text" />
+
+        <TimePicker
+            android:id="@id/end_time_picker"
+            style="@style/CreateKeyPassword_dialog_hour_picker"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/line_item" />
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/CreateKeyPassword_dialog_btn_bg">
+
+        <Button
+            android:id="@id/btn_dialog_ok"
+            style="@style/CreateKeyPassword_dialog_btn_ok"
+            android:text="@string/ok_text" />
+
+        <Button
+            android:id="@id/btn_dialog_cancel"
+            style="@style/CreateKeyPassword_dialog_btn_ok"
+            android:layout_marginLeft="40px"
+            android:text="@string/cancel_text" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

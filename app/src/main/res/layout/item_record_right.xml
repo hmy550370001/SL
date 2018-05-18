@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30px"
+    >
+    <TextView
+        android:id="@id/tv_right_name"
+        android:text="临时钥匙"
+        style="@style/MessageCenter_tv_right_name" />
+
+    <TextView
+        android:id="@id/tv_right_content"
+        android:text="2017/08/25 19:08 进门"
+        style="@style/MessageCenter_tv_right_content" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

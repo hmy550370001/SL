@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/login_register_bg">
+    <!--工具栏-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginTop="80.1px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@id/iv_back"
+            style="@style/login_register_back_image" />
+
+        <TextView
+            android:id="@id/tv_forgetPassWord"
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48px"
+            android:textSize="32px"
+            android:typeface="sans"
+            android:textColor="#FEFEFE"
+            android:text="@string/forgetPassWord_text" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <!--标题-->
+    <TextView
+        android:layout_marginTop="49.1px"
+        style="@style/login_register_title"
+        android:text="@string/logintext"/>
+
+
+    <!--输入框-->
+    <com.zhy.autolayout.AutoLinearLayout
+        style="@style/edit_bg"
+        android:layout_height="176px"
+        android:layout_marginTop="119px">
+        <!--手机号-->
+        <com.idc9000.smartlock.view.ClearEditText
+            android:id="@id/input_login_phone"
+            style="@style/login_register_edit_phone"
+            android:hint="@string/phone_text"
+            android:paddingLeft="42px"
+            android:paddingRight="19px" />
+
+        <include layout="@layout/line_login_register" />
+        <!--密码-->
+        <com.idc9000.smartlock.view.PasswdEditText
+            android:id="@id/input_login_password"
+            style="@style/login_register_edit_password"
+            android:hint="@string/pw_text"
+            android:paddingLeft="42px"
+            android:paddingRight="19px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <!--选择用户身份-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="624px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.6px">
+
+        <ImageView
+            android:id="@id/iv_host"
+            style="@style/wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="154px"
+            android:background="@mipmap/choose"/>
+
+        <ImageView
+            android:id="@id/iv_user"
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="154px"
+            android:background="@mipmap/choose"
+            android:visibility="invisible"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+        android:id="@id/rb_group"
+        android:layout_width="624px"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        app:rrbg_backgroundColor="#00000000"
+        app:rrbg_selectorColor="@color/white"
+        app:rrbg_selectorFullSize="true">
+        <!--房东-->
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@id/rb_host"
+            style="@style/RadioRealButton"
+            app:rrb_checked="true"
+            app:rrb_text="我是房东" />
+        <!--用户-->
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@id/rb_user"
+            style="@style/RadioRealButton"
+            app:rrb_text="我是租客" />
+    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+
+    <!--登陆-->
+    <Button
+        android:id="@id/btn_login"
+        style="@style/login_register_btn"
+        android:text="@string/login_text" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/person_center_bg">
+
+    <include layout="@layout/topbar" />
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/person_center_head">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50px"
+            android:layout_height="144px">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@id/portrait"
+                style="@style/person_center_portrait"
+                app:border="true"
+                app:border_color="@color/white"
+                app:border_width="2dp"
+                android:layout_centerInParent="true"
+                app:shadow="true"
+                android:src="@mipmap/tx_girl" />
+
+            <ImageView
+                android:id="@+id/take_photo"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginLeft="50px"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/portrait"
+                android:background="@mipmap/photo"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:id="@id/tv_name"
+            style="@style/person_center_name"
+            android:text="@string/test_name_text" />
+
+        <TextView
+            android:id="@id/tv_phone"
+            style="@style/person_center_phone"
+            android:text="@string/test_phone_text" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/person_center_body"
+        android:layout_marginTop="50px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_family"
+            style="@style/person_center_item_bg">
+
+            <ImageView
+                android:id="@id/iv_portrait_family"
+                style="@style/person_center_iv"
+                android:src="@mipmap/familynumber" />
+
+            <TextView
+                style="@style/tv_person_center_item"
+                android:layout_toEndOf="@id/iv_portrait_family"
+                android:text="@string/family_text" />
+
+            <TextView
+                android:id="@id/tv_family"
+                style="@style/tv_person_center_item_right"
+                android:layout_toStartOf="@id/iv_next_family"
+                android:text="@string/empty_text" />
+
+            <ImageView
+                android:id="@id/iv_next_family"
+                style="@style/tv_person_center_item_next"
+                android:src="@mipmap/next" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/line_item" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_help"
+            style="@style/person_center_item_bg">
+
+            <ImageView
+                android:id="@id/iv_portrait_help"
+                style="@style/person_center_iv"
+                android:src="@mipmap/help" />
+
+            <TextView
+                style="@style/tv_person_center_item"
+                android:layout_toEndOf="@id/iv_portrait_help"
+                android:text="@string/help_text" />
+
+            <ImageView
+                android:id="@+id/next_help"
+                style="@style/tv_person_center_item_next"
+                android:src="@mipmap/next" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/line_item" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_change_pw"
+            style="@style/person_center_item_bg">
+
+            <ImageView
+                android:id="@id/iv_change_pw"
+                style="@style/person_center_iv"
+                android:src="@mipmap/changepassage" />
+
+            <TextView
+                style="@style/tv_person_center_item"
+                android:layout_toEndOf="@id/iv_change_pw"
+                android:text="@string/change_pw_text" />
+
+            <ImageView
+                android:id="@+id/next_change_pw"
+                style="@style/tv_person_center_item_next"
+                android:src="@mipmap/next" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/line_item" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_check"
+            style="@style/person_center_item_bg">
+
+            <ImageView
+                android:id="@id/iv_portrait_check"
+                style="@style/person_center_iv"
+                android:src="@mipmap/update" />
+
+            <TextView
+                style="@style/tv_person_center_item"
+                android:layout_toEndOf="@id/iv_portrait_check"
+                android:text="@string/check_version_text" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/line_item" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@id/rl_exit"
+            style="@style/person_center_item_bg">
+
+            <ImageView
+                android:id="@id/portrait_exit"
+                style="@style/person_center_iv"
+                android:src="@mipmap/quit" />
+
+            <TextView
+                style="@style/tv_person_center_item"
+                android:layout_toEndOf="@+id/portrait_exit"
+                android:text="@string/exit_text" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/line_item" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

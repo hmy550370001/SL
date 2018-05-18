@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PropertyPayMentHeader_bg">
+
+    <com.zhy.autolayout.AutoRelativeLayout style="@style/PropertyPayMentHeader_item_bg">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@id/portrait"
+            style="@style/PropertyPayMentHeader_portrait"
+            android:src="@mipmap/tx_girl" />
+
+
+        <TextView
+            android:id="@id/tv_name"
+            style="@style/PropertyPayMentHeader_head_text"
+            android:text="老李 " />
+
+        <TextView
+            android:id="@id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:layout_marginLeft="30px"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textSize_28px"
+            android:textColor="#333333"
+            android:text="18722378115" />
+        <ImageView
+            android:id="@id/next"
+            style="@style/PropertyPayMentHeader_open" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

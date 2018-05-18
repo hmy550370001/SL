@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/empty_bg"
+              android:gravity="center"
+              android:orientation="vertical"
+    >
+    <ImageView
+        android:src="@mipmap/loadfaid"
+        android:layout_width="484px"
+        android:layout_height="282px"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load_error"
+        android:textSize="@dimen/textSize_28px"
+        android:textColor="#C6D7CF"/>
+</com.zhy.autolayout.AutoLinearLayout>

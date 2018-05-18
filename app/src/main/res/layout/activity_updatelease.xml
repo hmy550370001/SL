@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="#373835">
+
+        <ImageView
+            android:id="@id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="39.7px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="更新租期"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_28px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout style="@style/person_center_head">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="144px"
+            android:layout_marginTop="50px">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@id/portrait"
+                style="@style/person_center_portrait"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tx_girl"
+                app:border="true"
+                app:border_color="@color/white"
+                app:border_width="2dp"
+                app:shadow="true" />
+
+            <ImageView
+                android:id="@+id/take_photo"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/portrait"
+                android:background="@mipmap/photo" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:id="@id/tv_name"
+            style="@style/person_center_name"
+            android:text="@string/test_name_text" />
+
+        <TextView
+            android:id="@id/tv_phone"
+            style="@style/person_center_phone"
+            android:text="@string/test_phone_text" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="156px"
+        android:layout_marginTop="19px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33px"
+            android:layout_marginTop="39px"
+            android:text="原到期时间"
+            android:textColor="#666666"
+            android:textSize="@dimen/textSize_24px" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:text="2018/01/25"
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21px"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="40px"
+            android:text="续租时间"
+            android:textColor="#666666"
+            android:textSize="@dimen/textSize_24px" />
+
+        <include layout="@layout/line_item" />
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/CreateKeyPassword_radio_btn_bg">
+
+            <co.ceryle.radiorealbutton.RadioRealButtonGroup
+                android:id="@id/rbg"
+                style="@style/CreateKeyPassword_rb_bg">
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:id="@id/rb_day"
+                    style="@style/CreateKeyPassword_rb"
+                    app:rrb_checked="true"
+                    app:rrb_text="@string/day_text" />
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:id="@id/rb_hour"
+                    style="@style/CreateKeyPassword_rb"
+                    app:rrb_text="@string/hour_text" />
+            </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+            <TextView
+                android:id="@id/tv_time"
+                style="@style/CreateKeyPassword_tv_time"
+                android:text="@string/tv_time_text" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <Button
+            android:id="@id/btn_confirm"
+            style="@style/main_btn_add_device"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_green"
+            android:text="更新租期" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

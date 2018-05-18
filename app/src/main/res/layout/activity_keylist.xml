@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar"/>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:background="#F9F9F9"
+        style="@style/match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_below="@id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:layout_gravity="center">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/list_key"
+                style="@style/KeyList_list"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <Button
+            android:id="@id/btn_add"
+            android:layout_marginBottom="160px"
+            android:background="@mipmap/plus"
+            style="@style/KeyList_btn" />
+
+        <Button
+            android:id="@id/btn_delete"
+            style="@style/KeyList_btn"
+            android:layout_marginBottom="68px"
+            android:background="@mipmap/minus"/>
+        
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_select_all"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="#373835"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="全选"
+                    android:textSize="28px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_btn_delete"
+                android:background="#E34A4A"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="删除"
+                    android:textSize="28px"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

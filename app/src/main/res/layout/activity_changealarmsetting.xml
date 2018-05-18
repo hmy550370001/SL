@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/person_center_bg">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@id/top_bar"
+        style="@style/topBar"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_marginTop="32px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40px">
+            <com.idc9000.smartlock.view.PickerView
+                android:id="@id/time_spinner"
+                android:layout_width="100px"
+                android:layout_height="200px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:textSize="@dimen/textSize_28px"
+                android:textColor="@color/color_green"
+                android:text="分钟"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@id/btn_submit"
+            style="@style/round_btn"
+            android:text="@string/ok_text"
+            app:qmui_borderColor="@color/color_green"
+            app:qmui_backgroundColor="@color/color_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_tip_text"
+            android:textSize="@dimen/textSize_28px"
+            android:textColor="#999999"
+            android:layout_marginTop="50px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>
