@@ -28,8 +28,8 @@
         <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="157px"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="157px"
             android:orientation="vertical">
 
             <TextView
@@ -44,8 +44,8 @@
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="30px">
+                android:layout_marginTop="30px"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="30px"
@@ -58,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18px"
-                    android:text="剩余租期："
+                    android:text="住户人数："
                     android:textColor="#666666"
                     android:textSize="28px" />
             </com.zhy.autolayout.AutoLinearLayout>
@@ -66,9 +66,9 @@
         <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginBottom="31px"
-            android:layout_marginTop="19px">
+            android:layout_marginTop="19px"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="30px"

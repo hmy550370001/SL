@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
     style="@style/person_center_bg">
 
     <include layout="@layout/topbar" />
@@ -9,25 +10,25 @@
 
         <com.zhy.autolayout.AutoRelativeLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="50px"
-            android:layout_height="144px">
+            android:layout_height="144px"
+            android:layout_marginTop="50px">
 
             <com.pkmmte.view.CircularImageView
                 android:id="@id/portrait"
                 style="@style/person_center_portrait"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tx_girl"
                 app:border="true"
                 app:border_color="@color/white"
                 app:border_width="2dp"
-                android:layout_centerInParent="true"
-                app:shadow="true"
-                android:src="@mipmap/tx_girl" />
+                app:shadow="true" />
 
             <ImageView
                 android:id="@+id/take_photo"
                 android:layout_width="50px"
                 android:layout_height="50px"
-                android:layout_marginLeft="50px"
                 android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50px"
                 android:layout_toRightOf="@id/portrait"
                 android:background="@mipmap/photo"/>
         </com.zhy.autolayout.AutoRelativeLayout>
@@ -159,4 +160,59 @@
     </com.zhy.autolayout.AutoLinearLayout>
 
 
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_above="@id/ll"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+
+        >
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/btn_MessageCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/btn_DeviceList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/btn_PersonalCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
 </com.zhy.autolayout.AutoLinearLayout>

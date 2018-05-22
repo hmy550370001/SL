@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4191E3">
+    android:background="#4191E3"
+    android:orientation="vertical">
 
     <include layout="@layout/topbar"/>
 
@@ -24,23 +23,23 @@
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="165px"
+                android:gravity="center"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/textSize_28px"
-                    android:textColor="#666666"
                     android:layout_gravity="center_vertical"
-                    android:text="客服电话"/>
+                    android:text="客服电话"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/textSize_28px" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="36px"
+                    android:layout_marginLeft="19px"
                     android:text="88888888"
                     android:textColor="#506739"
-                    android:layout_marginLeft="19px"/>
+                    android:textSize="36px" />
 
             </com.zhy.autolayout.AutoLinearLayout>
 

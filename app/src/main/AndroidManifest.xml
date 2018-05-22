@@ -75,7 +75,7 @@
         <!-- 蒲公英版本发布 -->
         <meta-data
             android:name="PGYER_APPID"
-            android:value="a01f03ebec733a0dc0b369210bb321aa"></meta-data>
+            android:value="a01f03ebec733a0dc0b369210bb321aa" />
 
         <!-- Bugly配置APP ID -->
         <meta-data
@@ -139,7 +139,7 @@
             android:name=".activity.SplashActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="standard"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
 
         <!-- 主页 -->
         <activity
@@ -347,6 +347,9 @@
         <activity android:name=".activity.DeleteKeyActivity" />
         <!-- 密码类型 -->
         <activity android:name=".activity.PassWordTypeActivity" />
+        <activity
+            android:name=".activity.AddHomeActivity"
+            android:label="@string/title_activity_add_home"></activity>
     </application>
 
 </manifest>

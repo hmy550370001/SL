@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,11 +65,17 @@ public class DeviceListActivity extends BaseActivity {
     @BindView(R.id.list_device)
     RecyclerView list_device;  //设备列表
     @BindView(R.id.list_device2)
-            RecyclerView list_device2;
+    RecyclerView list_device2;
     ArrayList<RDeviceResult.ResultBean.LocksBean> locks;  //锁数据
     ArrayList<CurrentDeviceEvent> data;  //设备数据
     @BindView(R.id.btn_add)
     QMUIRoundButton btnAdd;
+    @BindView(R.id.btn_DeviceList)
+    QMUIRoundButton btnDeviceList;
+    @BindView(R.id.btn_MessageCenter)
+    QMUIRoundButton btnMessageCenter;
+    @BindView(R.id.btn_PersonalCenter)
+    QMUIRoundButton btnPersionalCenter;
     @BindView(R.id.swipeRefreshLayout)
     SwipeRefreshLayout swipeRefreshLayout; //刷新控件
     DeviceListAdapter mAdapter;
@@ -102,11 +107,14 @@ public class DeviceListActivity extends BaseActivity {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         // 设置布局管理器
         list_device.setLayoutManager(mLayoutManager);
+        RecyclerView.LayoutManager mLayoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        list_device2.setLayoutManager(mLayoutManager2);
         //租户登录隐藏添加设备按钮
+        /*
         if (SPUtils.getInstance().getString("userType").equals("User")){
             btnAdd.setVisibility(View.GONE);
         }
-
+*/
     }
 
     /**
@@ -120,11 +128,33 @@ public class DeviceListActivity extends BaseActivity {
     /**
      * 添加设备
      */
+    /*
     @OnClick(R.id.btn_add)
     public void onClick() {
         EventBus.getDefault().postSticky(new BindingEvent("AdminBinding",null));
         ActivityUtils.startActivity(SearchDeviceActivity.class);
+    }*/
+    @OnClick({R.id.btn_DeviceList, R.id.btn_PersonalCenter, R.id.btn_MessageCenter, R.id.btn_add})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_add:
+
+                EventBus.getDefault().postSticky(new BindingEvent("AdminBinding", null));
+                ActivityUtils.startActivity(AddHomeActivity.class);
+                break;
+            case R.id.btn_DeviceList:
+                break;
+            case R.id.btn_PersonalCenter:
+                ActivityUtil.start(context, PersonalCenter.class, false);
+                break;
+            case R.id.btn_MessageCenter:
+                ActivityUtil.start(context, MessageCenterActivity.class, false);
+                break;
+        }
+
+
     }
+
 
     /**
      * 初始化适配器
@@ -173,11 +203,37 @@ public class DeviceListActivity extends BaseActivity {
 
             }
         });
+        list_device2.addOnItemTouchListener(new OnItemClickListener() {
+            @Override
+            public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
+                try {
+                    //当前选中设备
+                    CurrentDeviceEvent currentDeviceEvent = (CurrentDeviceEvent) adapter.getData().get(position);
+                    EventBus.getDefault().postSticky(currentDeviceEvent);
+                    //判断当前用户状态
+                    if (Constants.UserState.equals("Admin")) {
+                        ActivityUtil.start(context, MainActivity.class, false);
+                    } else {
+                        if (currentDeviceEvent.getReceiveFlag() == 0) {
+                            //租户绑定设备
+                            EventBus.getDefault().postSticky(new BindingEvent("UserBinding", null));
+                            ActivityUtils.startActivity(SearchDeviceActivity.class);
+                        } else if (currentDeviceEvent.getReceiveFlag() == 1) {
+                            ActivityUtil.start(context, MainActivity.class, false);
+                        }
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
         //下拉刷新  上拉加载更多
         initRefreshLayout();
         // 设置adapter
         list_device.setAdapter(mAdapter);
-
+        list_device2.setAdapter(mAdapter);
         notDataView = getLayoutInflater().inflate(R.layout.empty_view, (ViewGroup) list_device.getParent(), false);
         notDataView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -340,18 +396,20 @@ public class DeviceListActivity extends BaseActivity {
         super.initTopBar();
         topbar.setBackgroundColor(getResources().getColor(R.color.top_bar_color));
         topbar.setTitle("常通物联");
+        /*       topbar  左边按钮
         topbar.addLeftImageButton(R.mipmap.my, R.id.my).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ActivityUtil.start(context, PersonalCenter.class, false);
             }
-        });
+        });   topbar   右边按钮
         topbar.addRightImageButton(R.mipmap.inform, R.id.inform).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ActivityUtil.start(context, MessageCenterActivity.class, false);
             }
         });
+        */
     }
 
     /**
@@ -380,6 +438,7 @@ public class DeviceListActivity extends BaseActivity {
     private ArrayList<CurrentDeviceEvent> getData(List<RDeviceResult.ResultBean.LocksBean> locks) {
         data = new ArrayList<>();
         for (int i = 0; i <locks.size(); i++) {
+
             CurrentDeviceEvent currentDeviceEvent = new CurrentDeviceEvent();
             currentDeviceEvent.setKeyAdmin(locks.get(i).getKeyAdmin());
             currentDeviceEvent.setKeyUser(locks.get(i).getKeyUser());
@@ -396,9 +455,11 @@ public class DeviceListActivity extends BaseActivity {
             currentDeviceEvent.setStartTime(String.valueOf(locks.get(i).getStartTime()));
             currentDeviceEvent.setEndTime((String) locks.get(i).getEndTime());
             data.add(i, currentDeviceEvent);
+
         }
         return data;
     }
+
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {

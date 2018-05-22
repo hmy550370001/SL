@@ -119,5 +119,6 @@
     <string name="enter">进入操作</string>
     <string name="name_text">昵称</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_add_home">AddHome</string>
 
 </resources>

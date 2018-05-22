@@ -1,7 +1,5 @@
 package com.idc9000.smartlock.event;
 
-import static com.idc9000.smartlock.cons.Constants.battery;
-
 /**
  * 事件实体类
  */
@@ -23,6 +21,7 @@ public class CurrentDeviceEvent {
     public String endTime; //结束时间
     public int safeMode; //安全模式
     public String mac;//mac 地址
+    //   public  String
 
     public CurrentDeviceEvent() {
     }

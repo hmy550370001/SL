@@ -310,6 +310,13 @@
         <item name="android:weightSum">1</item>
     </style>
 
+    <style name="sys_addhome">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#EDEDED</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:weightSum">1</item>
+    </style>
     <style name="person_center_head">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">447px</item>
